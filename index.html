@@ -28,7 +28,28 @@
                             </span>
                         </div>
                         <div id="form">
-
+                            <form class="form" action="/index.html" method="post">
+                                <div class="inputs-layout" id="firstinput">
+                                    <input type="email" name="email" placeholder="نام کاربری" class="text-inputs" id="email" maxlength="40" required>
+                                </div>
+                                <div class="inputs-layout">
+                                    <input type="password" name="password" placeholder="رمز عبور" class="text-inputs" id="password" maxlength="40" required>
+                                </div>
+                                <div class="inputs-layout recapcha-layout">
+                                    <input required type="text" name="chapcha" id="chapcha" placeholder="کد امنیتی" class="text-inputs" maxlength="5">
+                                    <div id="capcha-img recapcha-layout">
+                                        <img id="capcha-png" src="./Assets/PNG/capcha.jpg" alt="chapcha">
+                                        <img id="refresh-capcha" src="./Assets/SVG/recycle.svg" alt="refresh">
+                                    </div>
+                                </div>
+                                <div class="inputs-layout">
+                                    <input id="submit" type="submit" value="ورود">
+                                </div>
+                                <div class="inputs-layout checkbox-layout">
+                                    <input type="checkbox" name="rememberme" id="rememberme-checkbox">
+                                    <label id="checkbox-label" for="rememberme-checkbox">مرا به خاطر بسپار</label>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
