@@ -298,3 +298,25 @@ body{
     top: -50%;
     left: 40%;
   }
+  @media only screen and (max-width: 500px) {
+    #body{
+        flex-direction: column;
+        align-items: center;
+    }
+    #rightSide{
+        width: 100vw;
+        height: 65%;
+    }
+    #leftSide{
+        width: 100vw;
+        height: 35%;
+    }
+    #entry{
+        font-size: 1.3rem;
+        color: #424242;
+    }
+    #entry-description{
+        font-size: 0.8rem;
+        color: #9F9F9F;
+    }
+  }
