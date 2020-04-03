@@ -282,3 +282,19 @@ body{
     font-family: Comfortaa_bold;
     color: white;
 }
+@keyframes clockwise {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .beam {
+    display: inline-block;
+    width: 10%;
+    min-height: 100%;
+    animation: clockwise 2s linear infinite;
+    transform-origin: 100% 100%;
+    background: linear-gradient(70deg, transparent 30%, white), transparent;
+    position: absolute;
+    top: -50%;
+    left: 40%;
+  }
